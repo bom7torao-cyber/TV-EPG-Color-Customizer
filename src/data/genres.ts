@@ -1,0 +1,203 @@
+import { GenreDef, GenreId, ColorScheme } from '../types/epg';
+
+export const GENRE_DEFINITIONS: GenreDef[] = [
+  {
+    id: 'anime',
+    name: 'アニメ・特撮',
+    shortName: 'アニメ',
+    defaultBg: '#ffedd5', // soft peach orange
+    defaultBorder: '#ea580c',
+    defaultText: '#9a3412',
+    iconName: 'Tv',
+    keywords: ['アニメ', '特撮', '声優', 'マンガ', 'コミック', 'ヒーロー', 'プリキュア', 'ガンダム', '鬼滅', '呪術', 'ドラえもん', '名探偵コナン', 'ポケットモンスター', 'ちびまる子ちゃん', 'サザエさん', 'ワンピース', 'ONE PIECE'],
+  },
+  {
+    id: 'drama',
+    name: 'ドラマ',
+    shortName: 'ドラマ',
+    defaultBg: '#ffe4e6', // soft rose pink
+    defaultBorder: '#e11d48',
+    defaultText: '#9f1239',
+    iconName: 'Film',
+    keywords: ['ドラマ', '連続ドラマ', '大河', '朝ドラ', 'サスペンス', 'ミステリー', '時代劇', '木曜劇場', '日曜劇場', '月9', '火曜ドラマ', '金曜ドラマ', '土曜ドラマ', '相棒', '科捜研'],
+  },
+  {
+    id: 'sports',
+    name: 'スポーツ',
+    shortName: 'スポーツ',
+    defaultBg: '#e0f2fe', // sky blue
+    defaultBorder: '#0284c7',
+    defaultText: '#0369a1',
+    iconName: 'Trophy',
+    keywords: ['スポーツ', 'プロ野球', 'サッカー', 'Jリーグ', 'MLB', '大谷', 'ゴルフ', '大相撲', '競馬', '陸上', 'テニス', 'バスケ', 'Bリーグ', 'バレー', 'フィギュア', '体操', '五輪', '格闘技', 'ハイライト'],
+  },
+  {
+    id: 'music',
+    name: '音楽',
+    shortName: '音楽',
+    defaultBg: '#f3e8ff', // soft violet/lavender
+    defaultBorder: '#9333ea',
+    defaultText: '#7e22ce',
+    iconName: 'Music',
+    keywords: ['音楽', 'ミュージック', 'ライブ', 'コンサート', 'Mステ', 'うたコン', 'カウントダウン', 'ヒットチャート', 'オーケストラ', 'フェス', 'クラシック', 'J-POP', 'アイドル', '歌謡曲', '演歌', 'バンド', 'MUSIC'],
+  },
+  {
+    id: 'movie',
+    name: '映画',
+    shortName: '映画',
+    defaultBg: '#fef3c7', // warm gold / amber
+    defaultBorder: '#d97706',
+    defaultText: '#b45309',
+    iconName: 'Clapperboard',
+    keywords: ['映画', 'シネマ', '劇場版', '金曜ロードショー', '土曜プレミアム', 'シネマクラッシュ', '洋画', '邦画', 'アカデミー', 'MOVIE', 'CINEMA', 'ロードショー'],
+  },
+  {
+    id: 'variety',
+    name: 'バラエティ',
+    shortName: 'バラエティ',
+    defaultBg: '#fef08a', // vibrant sunny yellow
+    defaultBorder: '#ca8a04',
+    defaultText: '#854d0e',
+    iconName: 'Sparkles',
+    keywords: ['バラエティ', 'お笑い', 'クイズ', 'トーク', '漫才', 'コント', 'バラエティー', 'モニタリング', 'イッテQ', 'しゃべくり', '水曜日のダウンタウン', 'アメトーーク', 'ドッキリ', '旅番組'],
+  },
+  {
+    id: 'news',
+    name: '報道・ニュース',
+    shortName: 'ニュース',
+    defaultBg: '#e2e8f0', // slate / cool steel
+    defaultBorder: '#64748b',
+    defaultText: '#334155',
+    iconName: 'Newspaper',
+    keywords: ['ニュース', '報道', '時事', 'NEWS', '7時のニュース', 'ニュース7', 'ウォッチ9', '報道ステーション', 'news zero', 'news every', 'Nスタ', 'Live News', '天気の時間', '気象情報', '解説'],
+  },
+  {
+    id: 'info',
+    name: '情報・ワイドショー',
+    shortName: '情報',
+    defaultBg: '#ecfdf5', // light sage / mint
+    defaultBorder: '#059669',
+    defaultText: '#065f46',
+    iconName: 'Info',
+    keywords: ['情報', 'ワイドショー', 'モーニング', 'あさイチ', 'めざましテレビ', 'ZIP', 'THE TIME', 'DayDay', 'ひるおび', 'ゴゴスマ', 'ミヤネ屋', '情報ライブ', '生活情報', 'トレンド', 'グルメ', '健康'],
+  },
+  {
+    id: 'documentary',
+    name: 'ドキュメンタリー・教養',
+    shortName: 'ドキュメント',
+    defaultBg: '#ccfbf1', // soft teal
+    defaultBorder: '#0d9488',
+    defaultText: '#115e59',
+    iconName: 'BookOpen',
+    keywords: ['ドキュメンタリー', '教養', 'NHKスペシャル', 'プロフェッショナル', '情熱大陸', 'ガイアの夜明け', 'カンブリア宮殿', '歴史', '世界遺産', '自然', '科学', '宇宙', '動物', '密着'],
+  },
+  {
+    id: 'hobby',
+    name: '趣味・教育',
+    shortName: '趣味・教育',
+    defaultBg: '#dcfce7', // light green
+    defaultBorder: '#16a34a',
+    defaultText: '#166534',
+    iconName: 'GraduationCap',
+    keywords: ['趣味', '教育', 'Eテレ', 'きょうの料理', 'すてきにハンドメイド', '将棋', '囲碁', '日曜美術館', '語学', '英会話', 'ピタゴラスイッチ', 'デザインあ', '子ども向け'],
+  },
+  {
+    id: 'theater',
+    name: '劇場・公演',
+    shortName: '劇場',
+    defaultBg: '#fae8ff', // soft fuchsia
+    defaultBorder: '#c026d3',
+    defaultText: '#86198f',
+    iconName: 'PartyPopper',
+    keywords: ['劇場', '公演', '歌舞伎', '能', '狂言', '落語', '寄席', '宝塚', 'ミュージカル', '演劇', '舞台'],
+  },
+  {
+    id: 'other',
+    name: 'その他',
+    shortName: 'その他',
+    defaultBg: '#f8fafc', // subtle light gray
+    defaultBorder: '#94a3b8',
+    defaultText: '#475569',
+    iconName: 'MoreHorizontal',
+    keywords: ['その他', '放送休止', 'テスト', 'インフォマーシャル', 'ショップ', '通販', 'テレビショッピング'],
+  },
+];
+
+export const COLOR_SCHEMES: ColorScheme[] = [
+  {
+    id: 'classic-gguide',
+    name: '旧Gガイド・王道パステル (おすすめ)',
+    description: 'かつてのGガイドやYahoo!テレビで親しまれた、見やすく目に優しい定番パステルカラー',
+    colors: {
+      anime: { bg: '#ffeedd', border: '#f97316', text: '#9a3412' },
+      drama: { bg: '#ffe4e8', border: '#f43f5e', text: '#9f1239' },
+      sports: { bg: '#e0f2fe', border: '#0284c7', text: '#0369a1' },
+      music: { bg: '#f3e8ff', border: '#a855f7', text: '#6b21a8' },
+      movie: { bg: '#fef3c7', border: '#f59e0b', text: '#92400e' },
+      variety: { bg: '#fef9c3', border: '#eab308', text: '#713f12' },
+      news: { bg: '#e2e8f0', border: '#64748b', text: '#334155' },
+      info: { bg: '#ecfdf5', border: '#10b981', text: '#064e3b' },
+      documentary: { bg: '#ccfbf1', border: '#14b8a6', text: '#134e4a' },
+      hobby: { bg: '#dcfce7', border: '#22c55e', text: '#14532d' },
+      theater: { bg: '#fae8ff', border: '#d946ef', text: '#701a75' },
+      other: { bg: '#f1f5f9', border: '#94a3b8', text: '#475569' },
+    },
+  },
+  {
+    id: 'vivid-contrast',
+    name: '高コントラスト・くっきり鮮やか',
+    description: '離れた場所や大画面でもアニメやスポーツが一瞬で見分けられるビビッド配色',
+    colors: {
+      anime: { bg: '#fed7aa', border: '#ea580c', text: '#7c2d12' },
+      drama: { bg: '#fecdd3', border: '#e11d48', text: '#881337' },
+      sports: { bg: '#bae6fd', border: '#0284c7', text: '#0c4a6e' },
+      music: { bg: '#e9d5ff', border: '#9333ea', text: '#581c87' },
+      movie: { bg: '#fde68a', border: '#d97706', text: '#78350f' },
+      variety: { bg: '#fef08a', border: '#ca8a04', text: '#713f12' },
+      news: { bg: '#cbd5e1', border: '#475569', text: '#1e293b' },
+      info: { bg: '#a7f3d0', border: '#059669', text: '#064e3b' },
+      documentary: { bg: '#99f6e4', border: '#0d9488', text: '#134e4a' },
+      hobby: { bg: '#bbf7d0', border: '#16a34a', text: '#14532d' },
+      theater: { bg: '#f5d0fe', border: '#c026d3', text: '#701a75' },
+      other: { bg: '#e2e8f0', border: '#64748b', text: '#334155' },
+    },
+  },
+  {
+    id: 'anime-sports-focus',
+    name: 'アニメ＆スポーツ特化モード',
+    description: 'アニメ（橙）とスポーツ（青）と音楽（紫）だけを強く強調し、他は落ち着いたトーンに',
+    colors: {
+      anime: { bg: '#ffedd5', border: '#f97316', text: '#9a3412' },
+      drama: { bg: '#f8fafc', border: '#cbd5e1', text: '#475569' },
+      sports: { bg: '#e0f2fe', border: '#0284c7', text: '#0369a1' },
+      music: { bg: '#f3e8ff', border: '#a855f7', text: '#6b21a8' },
+      movie: { bg: '#fffbeb', border: '#fde68a', text: '#78350f' },
+      variety: { bg: '#f8fafc', border: '#e2e8f0', text: '#475569' },
+      news: { bg: '#f1f5f9', border: '#cbd5e1', text: '#475569' },
+      info: { bg: '#f8fafc', border: '#e2e8f0', text: '#475569' },
+      documentary: { bg: '#f8fafc', border: '#e2e8f0', text: '#475569' },
+      hobby: { bg: '#f8fafc', border: '#e2e8f0', text: '#475569' },
+      theater: { bg: '#f8fafc', border: '#e2e8f0', text: '#475569' },
+      other: { bg: '#ffffff', border: '#e2e8f0', text: '#64748b' },
+    },
+  },
+  {
+    id: 'dark-neon',
+    name: 'ダークモード・ネオンEPG',
+    description: '暗い部屋でのテレビ視聴に最適な黒背景＋ネオンアクセントカラー',
+    colors: {
+      anime: { bg: '#3b2210', border: '#f97316', text: '#ffedd5' },
+      drama: { bg: '#371821', border: '#f43f5e', text: '#ffe4e8' },
+      sports: { bg: '#082f49', border: '#38bdf8', text: '#e0f2fe' },
+      music: { bg: '#2e1065', border: '#c084fc', text: '#f3e8ff' },
+      movie: { bg: '#451a03', border: '#fbbf24', text: '#fef3c7' },
+      variety: { bg: '#3f2c00', border: '#facc15', text: '#fef9c3' },
+      news: { bg: '#1e293b', border: '#94a3b8', text: '#f1f5f9' },
+      info: { bg: '#022c22', border: '#34d399', text: '#ecfdf5' },
+      documentary: { bg: '#042f2e', border: '#2dd4bf', text: '#ccfbf1' },
+      hobby: { bg: '#052e16', border: '#4ade80', text: '#dcfce7' },
+      theater: { bg: '#3b0764', border: '#e879f9', text: '#fae8ff' },
+      other: { bg: '#0f172a', border: '#475569', text: '#94a3b8' },
+    },
+  },
+];

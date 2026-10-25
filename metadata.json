@@ -1,0 +1,6 @@
+{
+  "name": "TV EPG Color Customizer & Viewer - 番組表 色分け復活ツール",
+  "description": "bangumi.orgなどのテレビ番組表をアニメ・音楽・スポーツ等ジャンル別に自動色分けするブックマークレット生成ツール＆高機能EPG番組表ビューア",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
